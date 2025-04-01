@@ -7,6 +7,12 @@ function updateAppointmentItems() {
         appointmentItems[i].className =
             "appointmentItem enrolledMandatory cancelled free lesson scheduleInfoAvailable";
     }
+    const appointmentItemSmall = document.getElementsByClassName("compactAppointmentItem");
+
+    for (let i = 0; i < appointmentItemSmall.length; i++) {
+        appointmentItemSmall[i].className =
+            "compactAppointmentItem enrolledMandatory cancelled free lesson scheduleInfoAvailable";
+    }
 }
 
 
