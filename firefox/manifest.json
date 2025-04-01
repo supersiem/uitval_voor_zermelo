@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "uitval",
+    "version": "1.0",
+    "description": "laat alles uitvallen",
+    "icons": {
+        "48": "zermelo.png"
+    },
+    "browser_action": {
+        "default_title": "Uitval activeren"
+    },
+    "permissions": [
+        "activeTab",
+        "storage",
+        "*://*.zportal.nl/app/*"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    }
+}
